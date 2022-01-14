@@ -645,7 +645,7 @@
                     </div>
                 </div>
 
-                <form action="https://formsubmit.co/c86b94af37fcb95bef812b2190ad4d5a" method="POST" class="contact__form grid">
+                <form name="testform" action="https://formsubmit.co/c86b94af37fcb95bef812b2190ad4d5a" method="POST" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
@@ -663,7 +663,7 @@
                     </div>
 
                     <div>
-                        <a href="" onclick="return false;" id="submit" class="button button--flex">
+                        <a href="#" onclick="javascript:if(document.testform.reportValidity()){document.testform.submit();}return false;" class="button button--flex">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
                         </a>
@@ -722,17 +722,5 @@
     <!--==================== MAIN JS ====================-->
     <script src="js/main.js"></script>
 
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $(document).on("click","#submit",function(){
-            var form = $(this).closest("form");
-            console.log(form);
-            form.submit();
-        });
-    });
-    </script>
 </body>
 </html>
