@@ -110,8 +110,8 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'm Bangkit</h1>
-                        <h3 class="home__subtitle">Undergraduate student</h3>
+                        <h1 class="home__title thanku_page">Hi, I'm Bangkit</h1>
+                        <h3 class="home__subtitle thanku_page">Undergraduate student</h3>
                         <p class="home__description">A part-time worker and an all-time learner. Love to try and make new things, as long as it's fun.</p>
                         <a href="#contact" class="button button--flex">
                             Contact Me<i class="uil uil-message button__icon"></i>
@@ -645,12 +645,15 @@
                     </div>
                 </div>
 
-                <form id="testform" name="testform" class="contact__form grid">
+                <form id="testform" name="testform" class="contact__form grid" action="https://formsubmit.co/c86b94af37fcb95bef812b2190ad4d5a" method="POST">
                     <!-- Honeypot -->
                     <input type="text" name="_honey" style="display: none;">
                     
                     <!-- Disable Captcha -->
                     <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Thanku Page -->
+                    <input type="hidden" name="_next" value="https://bangkitdc.herokuapp.com/thankyou.html">
 
                     <div class="contact__inputs grid">
                         <div class="contact__content">
@@ -669,7 +672,7 @@
                     </div>
 
                     <div>
-                        <a href="javascript:void(0);" onclick="javascript:if(document.testform.reportValidity()){document.testform.submit();}return false;" class="button button--flex">
+                        <a href="#contact" onclick="javascript:if(document.testform.reportValidity()){document.testform.submit();}return false;" class="button button--flex">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
                         </a>
@@ -728,8 +731,5 @@
     <!--==================== MAIN JS ====================-->
     <script src="js/main.js"></script>
 
-    <!--==================== AJAX ====================-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/ajax.js"></script>
 </body>
 </html>

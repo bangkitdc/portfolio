@@ -1183,3 +1183,22 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.hehe {
+    padding-top: 16rem;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+.thanku_btn {
+    margin-top: -30px;
+}
+
+.thanku_reverse {
+    transform: rotateY(180deg);
+    margin-left: 0;
+    margin-right: 5px;
+}
