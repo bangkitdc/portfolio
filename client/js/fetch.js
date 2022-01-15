@@ -1,4 +1,4 @@
-fetch("https://formsubmit.co/ajax/bangkitdc@gmail.com", {
+fetch("https://formsubmit.co/ajax/c86b94af37fcb95bef812b2190ad4d5a", {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',
