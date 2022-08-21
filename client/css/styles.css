@@ -424,7 +424,7 @@ img {
 
 .box {
     flex: 1;
-    display: block;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 }
@@ -522,7 +522,10 @@ img {
 }
 
 .skills__react,
-.skills__node,
+.skills__node {
+    width: 50%;
+}
+
 .skills__cpp {
     width: 20%;
 }
@@ -532,14 +535,20 @@ img {
     width: 30%;
 }
 
-.skills__css,
-.skills__js,
+.skills__css {
+    width: 80%;
+}
+
+.skills__js {
+    width: 70%;
+}
+
 .skills__python {
     width: 50%;
 }
 
 .skills__html {
-    width: 60%;
+    width: 90%;
 }
 
 .skills__close .skills__list {
@@ -1078,14 +1087,8 @@ img {
     .about__img {
         width: 400px;
     }
-    .about__description {
-        text-align: initial;
-    }
     .about__info {
         justify-content: space-between;
-    }
-    .about__buttons {
-        justify-content: initial;
     }
 
     .qualification__tabs {
